@@ -27,20 +27,17 @@ To run E2E tests in the cli, use:
 #### Flow
 
 ```mermaid
-    zenuml
-        C as Cypress
-        A as App
-        F as Fixture
-        C -> A: Visit, pre test
-        C -> F: Get sample data
-        A -> C: Add todos 
-        C -> A: Validate todo count
-        C -> F: Filter todos to be renamed
-        A -> C: Rename todos
-        C -> F: Filter completed todos
-        A -> C: Mark todos as completed
-        C -> A: Validate todo count
-        C -> A: Test Active and Completed buttons
-        C -> A: Test Clear Completed buttons
+    sequenceDiagram
+        Cypress ->> App: Visit, pre test
+        Cypress ->> Fixture: Get sample data
+        App ->> Cypress: Add todos 
+        Cypress ->> App: Validate todo count
+        Cypress ->> Fixture: Filter todos to be renamed
+        App ->> Cypress: Rename todos
+        Cypress ->> Fixture: Filter completed todos
+        App ->> Cypress: Mark todos as completed
+        Cypress ->> App: Validate todo count
+        Cypress ->> App: Test Active and Completed buttons
+        Cypress ->> App: Test Clear Completed buttons
 ```
 
