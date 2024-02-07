@@ -1,0 +1,57 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "task": "Buy groceries + vegetables",
+            "completed": true
+        },
+        {
+            "id": 2,
+            "task": "Finish Project > Important",
+            "completed": true,
+            "rename": "Finish Project > Important - Revised"
+        },
+        {
+            "id": 3,
+            "task": "Exercise: Running",
+            "completed": true
+        },
+        {
+            "id": 4,
+            "task": "Read a book - Mystery",
+            "completed": false
+        },
+        {
+            "id": 5,
+            "task": "Prepare presentation @ Work",
+            "completed": false
+        },
+        {
+            "id": 6,
+            "task": "Call Mom < 6:00 PM",
+            "completed": true,
+            "rename": "Call Mom < 6:00 PM - Evening"
+        },
+        {
+            "id": 7,
+            "task": "Meeting with Team + Discuss Plans",
+            "completed": true
+        },
+        {
+            "id": 8,
+            "task": "Learn New Coding Language",
+            "completed": true
+        },
+        {
+            "id": 9,
+            "task": "Grocery shopping - @Supermarket",
+            "completed": false
+        },
+        {
+            "id": 10,
+            "task": "Write Test Cases for App",
+            "completed": true,
+            "rename": "Write Test Cases for App - Revised"
+        }
+    ]
+}
