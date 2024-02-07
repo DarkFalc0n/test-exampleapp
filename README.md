@@ -15,7 +15,7 @@ This project has [Cypress](https://www.cypress.io/) setup for E2E and Component 
 
 ### E2E testing
 
-Tests all features in a single run using sample data, accessed from [cypress/fixtures](https://github.com/DarkFalc0n/test-exampleapp/tree/main/cypress/fixtures).
+Tests all features in a single run using sample data, accessed from cypress/fixtures.
 
 #### Getting started
 
@@ -27,12 +27,20 @@ To run E2E tests in the cli, use:
 #### Flow
 
 ```mermaid
-    flowchart LR
-    A(Visit the site, pre-test) --> B(Fetch sample todos)
-    B --> C(Add each task) & F(Validate count)
-    C --> D(Rename tasks) & F
-    D --> E(Mark completed tasks)
-    E --> G(Test Active and Completed buttons)
-    G --> H(Test Clear Completed button)
+    zenuml
+        C as Cypress
+        A as App
+        F as Fixture
+        C -> A: Visit, pre test
+        C -> F: Get sample data
+        A -> C: Add todos 
+        C -> A: Validate todo count
+        C -> F: Filter todos to be renamed
+        A -> C: Rename todos
+        C -> F: Filter completed todos
+        A -> C: Mark todos as completed
+        C -> A: Validate todo count
+        C -> A: Test Active and Completed buttons
+        C -> A: Test Clear Completed buttons
 ```
 
